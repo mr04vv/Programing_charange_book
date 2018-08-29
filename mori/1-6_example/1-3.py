@@ -12,7 +12,7 @@ for i in range(bar_num-2):
             length = bar_length_list[i] + bar_length_list[j] + bar_length_list[k]
             max_length = max(bar_length_list[i],bar_length_list[j],bar_length_list[k])
             rest = length - max_length
-            if rest > max_length:
+            if rest > max_length: # 最大の辺が残りの二つの和より大きいと三角形は作れない
                 ans = max(ans,length)
 
 print(ans)
